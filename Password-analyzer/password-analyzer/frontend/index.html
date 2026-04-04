@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Password Analyzer 🔐</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Analyzer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <h1>Password Strength Analyzer 🔐</h1>
-  <p>Check how secure your password is in real-time.</p>
-
-  <input type="password" id="password" placeholder="Type your password here..." oninput="check()">
-
-  <div id="bar"></div>
-  <h3 id="strength">Strength: Waiting...</h3>
-  
-  <ul id="suggestions"></ul>
-
-  <script src="script.js"></script>
+    <header>
+        <h1>Password Analyzer</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Analyze Your Password</h2>
+            <form id="password-form">
+                <label for="password-input">Enter your password:</label>
+                <input type="password" id="password-input" name="password" required aria-describedby="password-help">
+                <button type="submit">Analyze</button>
+                <p id="password-help">Your password will be analyzed for strength and security.</p>
+            </form>
+            <div id="results" role="region" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Password Analyzer</p>
+    </footer>
+    <script>
+        document.getElementById('password-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const password = document.getElementById('password-input').value;
+            // Integrate password analysis logic here
+            document.getElementById('results').innerText = 'Analyzing password...';
+        });
+    </script>
 </body>
 </html>
