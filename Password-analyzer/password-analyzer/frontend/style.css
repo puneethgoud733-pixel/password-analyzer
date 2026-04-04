@@ -1,0 +1,32 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 80px;
+  background-color: #f4f4f9;
+}
+
+input {
+  padding: 12px;
+  width: 300px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+#bar {
+  height: 12px;
+  width: 0%;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #555;
+}
+
+li {
+  margin-bottom: 5px;
+}
