@@ -51,9 +51,9 @@ Open the `index.html` file in your browser
 
  Example Outputs
 
-- `123` → Very Weak ❌  
-- `hello123` → Medium ⚠️  
-- `H@ck3r#2026` → Strong ✅  
+- `123` → Very Weak 
+- `hello123` → Medium  
+- `H@ck3r#2026` → Strong  
 
  Deployment
 
